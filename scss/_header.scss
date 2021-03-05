@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.6875rem;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    &__logo {
+        width: 6rem;
+        height: 1rem;
+    }
+
+    &__button {
+        height: 1.5rem;
+        width: 5rem;
+        border-radius: 20px;
+
+        font-size: 0.5625rem;
+        border: 1px solid $pink;
+        color: $pink;
+
+        padding-right: 1.1875rem;
+        padding-left: 1.1875rem;
+        background: $white;
+    }
+}

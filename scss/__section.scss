@@ -107,7 +107,6 @@
         }
 
         &__mockup {
-            max-width: 100%;
             margin-left: auto;
             margin-right: auto;
             display: block;
@@ -132,6 +131,9 @@
         }
 
         &--bg-bottom-2 {
+            padding-bottom: 15.8125rem;
+            padding-top: 15.8125rem;
+
             &::after {
                 height: 100%;
                 background-position-y: bottom;
@@ -227,6 +229,7 @@
     }
 
     &__mockup {
+        max-width: 100%;
         margin-top: 6.5625rem;
         margin-bottom: 7.75rem;
     }

@@ -17,28 +17,32 @@
 
         &--bg-bottom-1 {
             &::after {
-                height: 7rem;
+                height: 100%;
+                background-position-y: bottom;
                 background-image: url(../../images/bg-section-top-mobile-1.svg);
             }
         }
 
         &--bg-bottom-2 {
             &::after {
-                height: 6.4375rem;
+                height: 100%;
+                background-position-y: bottom;
                 background-image: url(../../images/bg-section-top-mobile-2.svg);
             }
         }
 
         &--bg-bottom-3 {
             &::after {
-                height: 3.3125rem;
+                height: 100%;
+                background-position-y: bottom;
                 background-image: url(../../images/bg-footer-top-mobile.svg);
             }
         }
 
         &--bg-top-1 {
             &::before {
-                height: 3.25rem;
+                height: 100%;
+                background-position-y: top;
                 background-image: url(../../images/bg-section-bottom-mobile-1.svg);
             }
         }
@@ -48,7 +52,8 @@
             padding-bottom: 15.625rem;
 
             &::before {
-                height: 6.3125rem;
+                height: 100%;
+                background-position-y: top;
                 background-image: url(../../images/bg-section-bottom-mobile-2.svg);
             }
         }
@@ -75,6 +80,10 @@
             font-size: 3rem;
         }
 
+        &__metric {
+            margin-bottom: 1.375rem;
+        }
+
         &__text {
             padding-left: 12.5rem;
             padding-right: 12.5rem;
@@ -84,7 +93,7 @@
                 padding-left: 0;
                 padding-right: 0;
                 text-align: start !important;
-                font-size: 0.75rem;
+                font-size: 1.0625rem;
             }
         }
 
@@ -99,6 +108,9 @@
 
         &__mockup {
             max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
         }
 
         &__img {
@@ -113,30 +125,35 @@
 
         &--bg-bottom-1 {
             &::after {
-                height: 9.875rem;
+                height: 100%;
+                background-position-y: bottom;
                 background-image: url(../../images/bg-section-top-desktop-1.svg);
             }
         }
 
         &--bg-bottom-2 {
             &::after {
-                height: 9.75rem;
+                height: 100%;
+                background-position-y: bottom;
                 background-image: url(../../images/bg-section-top-desktop-2.svg);
             }
         }
 
         &--bg-bottom-3 {
             &::after {
-                height: 9.875rem;
+                height: 100%;
+                background-position-y: bottom;
                 background-image: url(../../images/bg-footer-top-desktop.svg);
             }
         }
 
         &--bg-top-1 {
             &::before {
-                height: 8.6875rem;
+                height: 100%;
+                background-position-y: top;
                 background-image: url(../../images/bg-section-bottom-desktop-1.svg);
             }
+
         }
 
         &--bg-top-2 {
@@ -144,7 +161,8 @@
             padding-bottom: 19.3125rem;
 
             &::before {
-                height: 8.6875rem;
+                height: 100%;
+                background-position-y: top;
                 background-image: url(../../images/bg-section-bottom-desktop-2.svg);
             }
         }
@@ -252,7 +270,7 @@
     }
 
     &--bg-bottom-2 {
-        padding-bottom: 6.4375rem;
+        padding-bottom: 8.8125rem;
 
         &::after {
             content: "";

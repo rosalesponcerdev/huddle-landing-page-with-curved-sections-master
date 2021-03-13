@@ -1,12 +1,49 @@
+@media(min-width:768px) {
+    .metric {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__value {
+            font-size: 4.5625rem;
+        }
+
+        &__label {
+            font-size: 19px;
+        }
+
+        &__icon {
+            width: 3.475rem;
+        }
+    }
+}
+
+@media(max-width:769px) {
+    .metric {
+        &__icon {
+            width: 1.875rem;
+            margin-left: 6.875rem;
+            transform: translateX(-100%);
+        }
+
+        &__value {
+            font-size: 3rem;
+        }
+    }
+}
+
 .metric {
-    padding-bottom: 6.25rem;
+    &__container {
+        padding-bottom: 6.25rem;
+    }
 
     &__icon {
-        width: 1.875rem;
         height: auto;
-        transform: translateX(-100%);
-
-        margin-left: 6.875rem;
     }
 
     &__value,
@@ -18,8 +55,6 @@
         margin-top: 0;
 
         line-height: 1;
-
-        font-size: 3rem;
         font-family: $open-sans-font;
         font-weight: 700;
         color: $very-dark-cyan;

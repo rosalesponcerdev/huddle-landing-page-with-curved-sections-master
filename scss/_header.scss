@@ -1,6 +1,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 1.6875rem;
@@ -14,16 +15,17 @@
     }
 
     &__button {
+        display: flex !important;
+        align-items: center;
         height: 1.5rem;
-        width: 5rem;
         border-radius: 20px;
 
-        font-size: 0.5625rem;
-        border: 1px solid $pink;
-        color: $pink;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        background: $white !important;
+        border: 1px solid $pink !important;
+        color: $pink !important;
 
-        padding-right: 1.1875rem;
-        padding-left: 1.1875rem;
-        background: $white;
+        font-size: 0.5625rem;
     }
 }

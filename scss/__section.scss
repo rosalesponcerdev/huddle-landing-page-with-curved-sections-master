@@ -1,23 +1,177 @@
+@media (max-width:767px) {
+    .section {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+
+        &__header {
+            font-size: 1.5rem;
+        }
+
+        &__text {
+            font-size: 0.78125rem;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &--bg-bottom-1 {
+            &::after {
+                height: 7rem;
+                background-image: url(../../images/bg-section-top-mobile-1.svg);
+            }
+        }
+
+        &--bg-bottom-2 {
+            &::after {
+                height: 6.4375rem;
+                background-image: url(../../images/bg-section-top-mobile-2.svg);
+            }
+        }
+
+        &--bg-bottom-3 {
+            &::after {
+                height: 3.3125rem;
+                background-image: url(../../images/bg-footer-top-mobile.svg);
+            }
+        }
+
+        &--bg-top-1 {
+            &::before {
+                height: 3.25rem;
+                background-image: url(../../images/bg-section-bottom-mobile-1.svg);
+            }
+        }
+
+        &--bg-top-2 {
+            padding-top: 6.3125rem;
+            padding-bottom: 15.625rem;
+
+            &::before {
+                height: 6.3125rem;
+                background-image: url(../../images/bg-section-bottom-mobile-2.svg);
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .section {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+
+        &__title {
+            &--start {
+                text-align: start !important;
+            }
+        }
+
+        &--icons {
+            display: flex;
+            align-items: center;
+        }
+
+        &__header {
+            font-size: 3rem;
+        }
+
+        &__text {
+            padding-left: 12.5rem;
+            padding-right: 12.5rem;
+            font-size: 1.25rem;
+
+            &--padding {
+                padding-left: 0;
+                padding-right: 0;
+                text-align: start !important;
+                font-size: 0.75rem;
+            }
+        }
+
+        &__container {
+            padding-right: 6.25rem;
+
+            &--left {
+                padding-left: 6.25rem !important;
+                padding-right: 0;
+            }
+        }
+
+        &__mockup {
+            max-width: 100%;
+        }
+
+        &__img {
+            width: 50%;
+        }
+
+        &--reverse {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        &--bg-bottom-1 {
+            &::after {
+                height: 9.875rem;
+                background-image: url(../../images/bg-section-top-desktop-1.svg);
+            }
+        }
+
+        &--bg-bottom-2 {
+            &::after {
+                height: 9.75rem;
+                background-image: url(../../images/bg-section-top-desktop-2.svg);
+            }
+        }
+
+        &--bg-bottom-3 {
+            &::after {
+                height: 9.875rem;
+                background-image: url(../../images/bg-footer-top-desktop.svg);
+            }
+        }
+
+        &--bg-top-1 {
+            &::before {
+                height: 8.6875rem;
+                background-image: url(../../images/bg-section-bottom-desktop-1.svg);
+            }
+        }
+
+        &--bg-top-2 {
+            padding-top: 19.3125rem;
+            padding-bottom: 19.3125rem;
+
+            &::before {
+                height: 8.6875rem;
+                background-image: url(../../images/bg-section-bottom-desktop-2.svg);
+            }
+        }
+    }
+}
+
+
 .section {
     position: relative;
-
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
 
     margin-left: auto;
     margin-right: auto;
 
     &__header,
-    &__text {
+    &__text,
+    &__title {
         text-align: center;
         color: $very-dark-cyan;
     }
 
+    &__title,
     &__header {
         font-family: $poppins-font;
         font-weight: 700;
-        font-size: 1.5rem;
+    }
 
+    &__header {
         margin-top: 7.75rem;
         margin-bottom: 2.1875rem;
     }
@@ -25,63 +179,102 @@
     &__text {
         font-family: $open-sans-font;
         font-weight: 600;
-        font-size: 0.8125rem;
+
+        padding-top: 0.8125rem;
+        padding-bottom: 1.8125rem;
+        margin: 0;
     }
 
     &__button {
-        display: block;
         margin: auto;
+        cursor: pointer;
 
-        background: $pink;
-        color: $very-pal-blue;
-
-
-        margin-top: 3.125rem;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-        padding-top: 0.875rem;
-        padding-bottom: 0.875rem;
+        margin-top: 2.125rem;
 
         border-radius: 20px;
-        border: none;
-        font-weight: 700;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &__img,
+    &__mockup {
+        height: auto;
+    }
+
+    &__img {
+        margin-top: 5.9375rem;
+        margin-bottom: 5rem;
     }
 
     &__mockup {
         margin-top: 6.5625rem;
         margin-bottom: 7.75rem;
-        width: 100%;
-        height: auto;
     }
 
+    &::before,
     &::after {
         position: absolute;
-
+        background-size: 100%;
         left: 0;
 
         background-repeat: no-repeat;
     }
 
-    &--bg-bottom-1 {
-        &:after {
-            content: "";
-            bottom: -.5rem;
-            width: 100%;
-            height: 7rem;
-            background-image: url(../../images/bg-section-top-mobile-1.svg);
-        }
-    }
 
     &--bg-top-1 {
-        &::after {
+        &::before {
             content: "";
             top: 0;
+            left: 0;
             width: 100%;
-            height: 3.25rem;
-            background-image: url(../../images/bg-section-bottom-mobile-1.svg);
         }
     }
 
+    &--bg-top-2 {
+
+        &::before {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &--bg-bottom-1 {
+        &::after {
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &--bg-bottom-2 {
+        padding-bottom: 6.4375rem;
+
+        &::after {
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &--bg-bottom-3 {
+        &::after {
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+
+    &--colored {
+        background-color: $very-pal-blue;
+    }
 }
 
 .shaded {

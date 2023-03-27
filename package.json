@@ -1,0 +1,17 @@
+{
+  "name": "huddle-landing-page-with-curved-sections-master",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/rosalesponcer/huddle-landing-page-with-curved-sections-master",
+  "author": "Renzo Rosales <rosalesponcer@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:p": "pug .",
+    "build:s": "sass scss:dist/css --style=compressed",
+    "build": "npm run build:p && npm run build:l"
+  },
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.60.0"
+  }
+}

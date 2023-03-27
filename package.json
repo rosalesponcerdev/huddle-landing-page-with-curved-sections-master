@@ -8,7 +8,7 @@
   "scripts": {
     "build:p": "pug .",
     "build:s": "sass scss:dist/css --style=compressed",
-    "build": "npm run build:p && npm run build:l"
+    "build": "npm run build:p && npm run build:s"
   },
   "dependencies": {
     "pug-cli": "^1.0.0-alpha6",
